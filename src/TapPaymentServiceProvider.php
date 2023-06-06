@@ -31,7 +31,7 @@ class TapPaymentServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/tappayment.php', 'tappayment');
+        $this->mergeConfigFrom(__DIR__.'/../config/tap_payment.php', 'tap_payment');
 
         // Register the service the package provides.
         $this->app->singleton('tappayment', function ($app) {
@@ -58,7 +58,7 @@ class TapPaymentServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/tappayment.php' => config_path('tappayment.php'),
+            __DIR__.'/../config/tap_payment.php' => config_path('tap_payment.php'),
         ], 'tappayment.config');
 
         // Publishing the views.
