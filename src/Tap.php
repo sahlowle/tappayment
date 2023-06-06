@@ -18,7 +18,7 @@ class Tap
         
         $request = TapPaymentService::makeRequest();
 
-        $response =  $request->post('/v2/charges',$body);
+        $response =  $request->post('/charges',$body);
 
         return $response->object();
     }
@@ -32,7 +32,7 @@ class Tap
     {
         $request = TapPaymentService::makeRequest();
 
-        $url = "/v2/charges/".$charge_id;
+        $url = "/charges/".$charge_id;
 
         $response =  $request->get($url);
         

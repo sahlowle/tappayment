@@ -10,7 +10,7 @@
         }
     ],
     "homepage": "https://github.com/sahlowle/tappayment",
-    "keywords": ["Laravel", "TapPayment","payment","tap payment"],
+    "keywords": ["Laravel", "TapPayment","payment","tap payment","paytabs"],
     "require": {
         "illuminate/support": "~9"
     },

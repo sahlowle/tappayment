@@ -59,7 +59,7 @@ class TapPaymentServiceProvider extends ServiceProvider
         // Publishing the configuration file.
         $this->publishes([
             __DIR__.'/../config/tap_payment.php' => config_path('tap_payment.php'),
-        ], 'tappayment.config');
+        ], 'tap_payment.config');
 
         // Publishing the views.
         /*$this->publishes([

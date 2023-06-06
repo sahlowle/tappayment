@@ -15,7 +15,6 @@ class TapPaymentService
     */
     public static function makeRequest()
 	{
-
         $base_url = config('tap_payment.base_url','https://api.tap.company/v2');
 
         $bearerToken = config('tap_payment.token');
@@ -24,26 +23,6 @@ class TapPaymentService
 
 		return $request;
 	}
-    /*
-    |--------------------------------------------------------------------------
-    | Create Charge Payment
-    |--------------------------------------------------------------------------
-    */
-
-    public static function charge($data)
-    {
-        $body = self::getBody($data);
-
-        $url = "https://api.tap.company/v2/charges";
-
-        $bearerTest = "sk_test_fBjUei2mQFrRDkVgxGbESyPv";
-        $bearerLive = "sk_live_ykx4XiBSslwI5UCu0TZM3QgA";
-        
-        $response = Http::withToken($bearerTest)->post($url,$body);
-
-        return $response->object();
- 
-    }
     
     /*
     |--------------------------------------------------------------------------
