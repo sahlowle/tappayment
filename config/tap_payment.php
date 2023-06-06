@@ -10,7 +10,7 @@ return [
 
     'base_url' => 'https://api.tap.company/v2/',
 
-    'token' => 'sk_test_fBjUei2mQFrRDkVgxGbESyPv',
+    'token' => 'your-key',
 
     'currency' => 'SAR',
 

@@ -25,7 +25,7 @@ composer require sahlowle/tappayment
 # Setup and configuration
 You can also publish the config file using
 ```bash
-php artisan vendor:publish --tag="tappayment-config"
+php artisan vendor:publish --tag="tap_payment.config"
 ```
 After that, you can see the file in app/paytabs.php and update it. You might need to change the model variable to use your custom User model.
 
