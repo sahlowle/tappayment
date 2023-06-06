@@ -1,0 +1,41 @@
+{
+    "name": "sahlowle/tappayment",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Suhail Osman",
+            "email": "sahlowle@gmail.com",
+            "homepage": "http://suhail-osman.com"
+        }
+    ],
+    "homepage": "https://github.com/sahlowle/tappayment",
+    "keywords": ["Laravel", "TapPayment","payment","tap payment"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sahlowle\\TapPayment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sahlowle\\TapPayment\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sahlowle\\TapPayment\\TapPaymentServiceProvider"
+            ],
+            "aliases": {
+                "TapPayment": "Sahlowle\\TapPayment\\Facades\\TapPayment"
+            }
+        }
+    }
+}
